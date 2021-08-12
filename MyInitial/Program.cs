@@ -15,7 +15,7 @@ namespace MyNameSpace
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new SummaryForm());
+            Application.Run(new JuiceBarForm());
         }
     }
 }

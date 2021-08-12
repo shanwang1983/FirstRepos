@@ -1,3 +1,5 @@
+using System.Windows.Forms;
+
 namespace MyNameSpace
 {
     partial class JuiceBarForm
@@ -38,6 +40,7 @@ namespace MyNameSpace
             this.ladiesCheckBox = new System.Windows.Forms.CheckBox();
             this.energyBoosterCheckBox = new System.Windows.Forms.CheckBox();
             this.vitaminPackCheckBox = new System.Windows.Forms.CheckBox();
+            this.childJuiceCheckBox = new System.Windows.Forms.CheckBox();
             this.summaryButton = new System.Windows.Forms.Button();
             this.orderCompleteButton = new System.Windows.Forms.Button();
             this.addToOrderButton = new System.Windows.Forms.Button();
@@ -135,12 +138,25 @@ namespace MyNameSpace
             this.groupBox3.Controls.Add(this.ladiesCheckBox);
             this.groupBox3.Controls.Add(this.energyBoosterCheckBox);
             this.groupBox3.Controls.Add(this.vitaminPackCheckBox);
+            this.groupBox3.Controls.Add(this.childJuiceCheckBox);
             this.groupBox3.Location = new System.Drawing.Point(12, 176);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(184, 100);
+            this.groupBox3.Size = new System.Drawing.Size(184, 120);
             this.groupBox3.TabIndex = 1;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Extras - $0.50 each";
+
+            // childJuiceCheckBox
+            // 
+            this.childJuiceCheckBox.AutoSize = true;
+            this.childJuiceCheckBox.Location = new System.Drawing.Point(12, 91);
+            this.childJuiceCheckBox.Name = "childJuiceCheckBox";
+            this.childJuiceCheckBox.Size = new System.Drawing.Size(88, 17);
+            this.childJuiceCheckBox.TabIndex = 0;
+            this.childJuiceCheckBox.Text = "&Child Juice";
+            this.childJuiceCheckBox.UseVisualStyleBackColor = true;
+            this.childJuiceCheckBox.CheckedChanged += new System.EventHandler(this.vitaminPackCheckBox_CheckedChanged);
+
             // 
             // ladiesCheckBox
             // 
@@ -174,6 +190,10 @@ namespace MyNameSpace
             this.vitaminPackCheckBox.Text = "&Vitamin Pack";
             this.vitaminPackCheckBox.UseVisualStyleBackColor = true;
             this.vitaminPackCheckBox.CheckedChanged += new System.EventHandler(this.vitaminPackCheckBox_CheckedChanged);
+
+            
+
+
             // 
             // summaryButton
             // 
@@ -444,6 +464,7 @@ namespace MyNameSpace
         private System.Windows.Forms.CheckBox ladiesCheckBox;
         private System.Windows.Forms.CheckBox energyBoosterCheckBox;
         private System.Windows.Forms.CheckBox vitaminPackCheckBox;
+        private CheckBox childJuiceCheckBox;
         private System.Windows.Forms.Button summaryButton;
         private System.Windows.Forms.Button orderCompleteButton;
         private System.Windows.Forms.Button addToOrderButton;
