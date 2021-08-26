@@ -126,10 +126,10 @@ namespace MyNameSpace
             // 
             this.twelveOunceRadioButton.AutoSize = true;
             this.twelveOunceRadioButton.Location = new System.Drawing.Point(12, 19);
-            this.twelveOunceRadioButton.Name = "twelveOunceRadioButton";
+            this.twelveOunceRadioButton.Name = "hundredOunceRadioButton";
             this.twelveOunceRadioButton.Size = new System.Drawing.Size(96, 17);
             this.twelveOunceRadioButton.TabIndex = 0;
-            this.twelveOunceRadioButton.Text = "12 &Ounce 4.00";
+            this.twelveOunceRadioButton.Text = "100 &Ounce 400.00";
             this.twelveOunceRadioButton.UseVisualStyleBackColor = true;
             this.twelveOunceRadioButton.CheckedChanged += new System.EventHandler(this.twelveOunceRadioButton_CheckedChanged);
             // 
